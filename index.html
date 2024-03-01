@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion Tekrar</title>
+    <style>
+        .accordion{
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            transition: .5s;
+            background-color: aqua;
+            color: black;
+        }
+        /* .panel{
+            display: none;
+            overflow: hidden;
+        } */
+        .panel{
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.4s ease-in;
+        }
+        .active{
+            background-color: red;
+        }
+        .accordion::after{
+            content: "🥶🥶🥶";
+            float: right;
+        }
+        .active::after{
+            content: "🥵🥵🥵";
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Açılır Pencereler</h1>
+    <button class="accordion">1. Açılır Pencere</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ducimus voluptates! Asperiores, optio libero tenetur ipsa ex consequuntur sunt rem vel reiciendis officiis cupiditate vero mollitia architecto quibusdam cumque perferendis velit porro odio, minus cum perspiciatis autem facilis aut. Dignissimos, dicta debitis facere earum nobis iure cum ea nihil nulla?</p>
+    </div>
+    <button class="accordion">2. Açılır Pencere</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ducimus voluptates! Asperiores, optio libero tenetur ipsa ex consequuntur sunt rem vel reiciendis officiis cupiditate vero mollitia architecto quibusdam cumque perferendis velit porro odio, minus cum perspiciatis autem facilis aut. Dignissimos, dicta debitis facere earum nobis iure cum ea nihil nulla?</p>
+    </div>
+    <button class="accordion">3. Açılır Pencere</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ducimus voluptates! Asperiores, optio libero tenetur ipsa ex consequuntur sunt rem vel reiciendis officiis cupiditate vero mollitia architecto quibusdam cumque perferendis velit porro odio, minus cum perspiciatis autem facilis aut. Dignissimos, dicta debitis facere earum nobis iure cum ea nihil nulla?</p>
+    </div>
+    <script src="accordionAgain.js"></script>
+</body>
+</html>
